@@ -70,24 +70,24 @@ h6 {
 
 @font-face {
     font-family: 'Helvetica Now Text';
-    src: url('HelveticaNowText-Regular.eot');
-    src: local('Helvetica Now Text  Regular'), local('HelveticaNowText-Regular'),
-        url('HelveticaNowText-Regular.eot?#iefix') format('embedded-opentype'),
-        url('HelveticaNowText-Regular.woff2') format('woff2'),
-        url('HelveticaNowText-Regular.woff') format('woff'),
-        url('HelveticaNowText-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/HelveticaNowText-Regular.eot');
+    src: local('Helvetica Now Text Regular'), local('HelveticaNowText-Regular'),
+        url('/assets/fonts/HelveticaNowText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/HelveticaNowText-Regular.woff2') format('woff2'),
+        url('/assets/fonts/HelveticaNowText-Regular.woff') format('woff'),
+        url('/assets/fonts/HelveticaNowText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica Now Text';
-    src: url('HelveticaNowText-Bold.eot');
-    src: local('Helvetica Now Text  Bold'), local('HelveticaNowText-Bold'),
-        url('HelveticaNowText-Bold.eot?#iefix') format('embedded-opentype'),
-        url('HelveticaNowText-Bold.woff2') format('woff2'),
-        url('HelveticaNowText-Bold.woff') format('woff'),
-        url('HelveticaNowText-Bold.ttf') format('truetype');
+    src: url('/assets/fonts/HelveticaNowText-Bold.eot');
+    src: local('Helvetica Now Text Bold'), local('HelveticaNowText-Bold'),
+        url('/assets/fonts/HelveticaNowText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/HelveticaNowText-Bold.woff2') format('woff2'),
+        url('/assets/fonts/HelveticaNowText-Bold.woff') format('woff'),
+        url('/assets/fonts/HelveticaNowText-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -96,15 +96,15 @@ h6 {
 
 @font-face {
     font-family: 'Interstate Black';
+    src: url('/assets/fonts/InterstateBlack.woff') format('woff');
     font-style: normal;
     font-weight: normal;
-    src: local('Interstate Black'), url('InterstateBlack.woff') format('woff');
 }
 
 /* Body styling */
 
 body {
-    font-family: Helvetica-Now-Text-Regular, Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 15px;
@@ -119,11 +119,88 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* Headers */
+/* Global Headers/fonts */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Interstate Black', 'Helvetica', 'Arial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.h1,
 h1 {
+    font-size: 2.5rem
+}
+
+.h2,
+h2 {
+    font-size: 2rem
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem
+}
+
+.h4,
+h4 {
+    font-size: 1.5rem
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem
+}
+
+.h6,
+h6 {
+    font-size: 1rem
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
+    font-weight: regular;
+}
+
+/* Global font classes */
+
+.body-font-regular {
+    font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.body-font-bold {
+    font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* Brand colours */
+
+.brand-colour {
+    color: #c41320
+}
+
+/* h1 {
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.96px;
     color: #c41320
-}
+} */
