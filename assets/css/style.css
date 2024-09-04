@@ -66,6 +66,8 @@ h6 {
 
 /* Fonts */
 
+/* Body fonts */
+
 @font-face {
     font-family: 'Helvetica Now Text';
     src: url('HelveticaNowText-Regular.eot');
@@ -90,6 +92,15 @@ h6 {
     font-style: normal;
 }
 
+/* Header font */
+
+@font-face {
+    font-family: 'Interstate Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Black'), url('InterstateBlack.woff') format('woff');
+}
+
 /* Body styling */
 
 body {
@@ -105,11 +116,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-appearance: none;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
 }
 
 /* Headers */
 
 h1 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
     color: #c41320
 }
