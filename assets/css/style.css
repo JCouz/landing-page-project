@@ -301,6 +301,8 @@ a:has(img):hover {
   max-width: 80px;
 }
 
+/* Header Desktop view */
+
 @media screen and (min-width: 990px) {
   .header__logo-container {
     padding: 40px;
@@ -330,6 +332,11 @@ a:has(img):hover {
 
 .hero__text h1 {
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero__text p {
+  text-align: center;
 }
 
 .hero__text-highlight {
@@ -350,6 +357,8 @@ a:has(img):hover {
   flex-direction: column;
   gap: 10px;
 }
+
+/* Tablet view required to properly display content */
 
 @media screen and (min-width: 767px) and (max-width: 1375px) {
   .hero__container {
@@ -385,6 +394,8 @@ a:has(img):hover {
   }
 }
 
+/* Desktop view */
+
 @media screen and (min-width: 1375px) {
   .hero__container {
     padding: 80px;
@@ -400,6 +411,8 @@ a:has(img):hover {
     height: 100%;
     max-width: 100%;
   }
+
+  /* add grayscale hover effect for desktop */
 
   .hero__image {
     position: absolute;
