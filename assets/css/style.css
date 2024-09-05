@@ -358,6 +358,10 @@ a:has(img):hover {
   gap: 10px;
 }
 
+.hero__cta-container p {
+  text-align: center;
+}
+
 /* Tablet view required to properly display content */
 
 @media screen and (min-width: 767px) and (max-width: 1375px) {
