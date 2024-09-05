@@ -337,12 +337,7 @@ a:has(img):hover {
 }
 
 .hero__image {
-  position: absolute;
-  left: auto;
-  transform: translateX(-50%);
   width: 300px;
-  z-index: 2;
-  bottom: 146px;
 }
 
 .hero__image-link {
@@ -382,8 +377,6 @@ a:has(img):hover {
   }
 
   .hero__image {
-    position: static;
-    transform: unset;
     width: 200px;
   }
 
