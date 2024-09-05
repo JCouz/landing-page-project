@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Levi's. Explore our classic jeans and turn your imagination into reality."
+    />
     <title>Levi's</title>
+    <link
+      rel="icon"
+      href="/assets/images/levis-favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
+    <!-- Keeping the header basic without nav to reduce options for user to move away from the page without interacting with the featured product(s) -->
     <header>
       <div class="header__logo-container">
         <img
@@ -16,8 +26,31 @@
         />
       </div>
     </header>
-    <h1>Levi's</h1>
-    <p>New tops to add to your rotation this season.</p>
+    <section class="hero__container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1>
+            Close your eyes. <br />
+            Think “jeans<span class="hero__text-highlight">.</span>”
+          </h1>
+          <p>Now open.</p>
+          <p>They were 501® Originals, right?</p>
+        </div>
+        <div class="hero__right">
+          <a class="hero__image-link" href="/index.html">
+            <img
+              src="assets/images/levi-501.png"
+              alt="Levi's 501® Jeans"
+              class="hero__image"
+            />
+          </a>
+          <div class="hero__cta-container">
+            <a href="/index.html" class="hero__cta">Own the Original 501®</a>
+            <p>Turn your imagination into reality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
