@@ -287,7 +287,6 @@ a:has(img):hover {
 }
 
 /* Header */
-
 .header__logo-container {
   display: flex;
   align-items: center;
@@ -295,7 +294,7 @@ a:has(img):hover {
   padding: 10px;
   border-bottom: 2px #c41320 solid;
   height: 64px;
-  transition: padding 0.3s, border-bottom 0.3s; /* Smooth transitions for padding and border */
+  transition: padding 0.5s, border-bottom 0.5s, opacity 0.5s; /* Increased to 0.5s */
 }
 
 .header__logo {
@@ -303,7 +302,6 @@ a:has(img):hover {
 }
 
 /* Header Desktop view */
-
 @media screen and (min-width: 990px) {
   .header__logo-container {
     padding: 40px;
@@ -311,14 +309,21 @@ a:has(img):hover {
 }
 
 /* Sticky Header */
-
 header.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   background-color: #fff;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.7s, transform 0.7s; /* Increased to 0.7s for a slower effect */
+}
+
+header.sticky.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Hero */
@@ -333,8 +338,6 @@ header.sticky {
    I have gone with a set value */
   height: 675px;
   position: relative;
-  /* sticky header offset */
-  margin-top: 64px;
 }
 
 .hero__content {

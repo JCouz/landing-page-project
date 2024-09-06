@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Make sure the header is visible on first load
   header.classList.add('sticky');
+  header.classList.add('visible');
 
   window.addEventListener('scroll', () => {
     let currentScroll = window.scrollY || document.documentElement.scrollTop;
@@ -39,9 +40,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (currentScroll > lastScrollTop) {
       // Scrolling down
       header.classList.remove('sticky');
+      header.classList.remove('visible');
     } else {
       // Scrolling up
       header.classList.add('sticky');
+      // Use setTimeout to add the 'visible' class after a short delay
+      setTimeout(() => {
+        header.classList.add('visible');
+      }, 50);
     }
 
     // Update lastScrollTop
