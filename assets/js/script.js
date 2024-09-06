@@ -8,11 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.swiper-scrollbar',
     },
     breakpoints: {
-      420: {
+      505: {
         slidesPerView: 1.4,
         spaceBetween: 10,
       },
       990: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      1080: {
+        slidesPerView: 2.2,
+        spaceBetween: 20,
+      },
+      1380: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
