@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover Levi's. Explore our classic jeans and turn your imagination into reality."
+      content="Seam the details Levi's. Explore our classic jeans and turn your imagination into reality."
     />
     <title>Levi's</title>
     <link
@@ -14,6 +14,11 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Adding SwiperJS Styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Keeping the header basic without nav to reduce options for user to move away from the page without interacting with the featured product(s) -->
@@ -26,6 +31,9 @@
         />
       </div>
     </header>
+
+    <!-- Hero section -->
+
     <section class="hero__container">
       <div class="hero__content">
         <div class="hero__text">
@@ -42,6 +50,7 @@
               src="assets/images/levi-501.png"
               alt="Levi's 501® Jeans"
               class="hero__image"
+              id="heroImage"
             />
           </a>
           <div class="hero__cta-container">
@@ -51,6 +60,250 @@
         </div>
       </div>
     </section>
+
+    <!-- Product Slider -->
+
+    <section class="product-slider">
+      <div class="swiper">
+        <div class="product-slider__container swiper-wrapper">
+          <div class="product-slider__card swiper-slide">
+            <h4>501® Levi's® Original</h4>
+            <p class="product-slider_description">
+              With a classic straight leg and iconic styling, they’re literally
+              the blueprint for every pair of modern jeans—burned into the
+              world’s collective cortex ever since Levi Strauss (the man
+              himself!) introduced them in 1873.
+            </p>
+            <a class="product-slider__cta" href="/index.html"
+              >Seam the details
+              <span class="product-slider__cta-arrow"
+                ><svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M4 12H20M20 12L14 6M20 12L14 18"
+                      stroke="#c41320"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g></svg></span
+            ></a>
+            <div class="product-slider__image-container">
+              <img
+                src="assets/images/levis-1.webp"
+                alt="Levi's 501® Jeans"
+                class="product-slider__image"
+              />
+              <img
+                src="assets/images/levis-1-hover.webp"
+                alt="Levi's 501® Jeans rear"
+                class="product-slider__image-hover"
+              />
+            </div>
+          </div>
+          <div class="product-slider__card swiper-slide">
+            <h4>Levi's® Skateboarding 501®</h4>
+            <p class="product-slider_description">
+              With a classic straight leg and iconic styling, they’re literally
+              the blueprint for every pair of modern jeans—burned into the
+              world’s collective cortex ever since Levi Strauss (the man
+              himself!) introduced them in 1873.
+            </p>
+            <a class="product-slider__cta" href="/index.html"
+              >Seam the details<svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M4 12H20M20 12L14 6M20 12L14 18"
+                    stroke="#c41320"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <div class="product-slider__image-container">
+              <img
+                src="assets/images/levis-skate.webp"
+                alt="Levi's® Skateboarding 501® Jeans"
+                class="product-slider__image"
+              />
+              <img
+                src="assets/images/levis-skate-hover.webp"
+                alt="Levi's® Skateboarding 501® Jeans rear"
+                class="product-slider__image-hover"
+              />
+            </div>
+          </div>
+          <div class="product-slider__card swiper-slide">
+            <h4>501® Levi's® Original Jeans</h4>
+            <p class="product-slider_description">
+              With a classic straight leg and iconic styling, they’re literally
+              the blueprint for every pair of modern jeans—burned into the
+              world’s collective cortex ever since Levi Strauss (the man
+              himself!) introduced them in 1873.
+            </p>
+            <a class="product-slider__cta" href="/index.html"
+              >Seam the details<svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M4 12H20M20 12L14 6M20 12L14 18"
+                    stroke="#c41320"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <div class="product-slider__image-container">
+              <img
+                src="assets/images/levis-1.webp"
+                alt="Levi's 501® Jeans"
+                class="product-slider__image"
+              />
+              <img
+                src="assets/images/levis-1-hover.webp"
+                alt="Levi's 501® Jeans Hover"
+                class="product-slider__image-hover"
+              />
+            </div>
+          </div>
+          <div class="product-slider__card swiper-slide">
+            <h4>501® Levi's® Original Jeans</h4>
+            <p class="product-slider_description">
+              With a classic straight leg and iconic styling, they’re literally
+              the blueprint for every pair of modern jeans—burned into the
+              world’s collective cortex ever since Levi Strauss (the man
+              himself!) introduced them in 1873.
+            </p>
+            <a class="product-slider__cta" href="/index.html"
+              >Seam the details<svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M4 12H20M20 12L14 6M20 12L14 18"
+                    stroke="#c41320"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <div class="product-slider__image-container">
+              <img
+                src="assets/images/levis-1.webp"
+                alt="Levi's 501® Jeans"
+                class="product-slider__image"
+              />
+              <img
+                src="assets/images/levis-1-hover.webp"
+                alt="Levi's 501® Jeans Hover"
+                class="product-slider__image-hover"
+              />
+            </div>
+          </div>
+          <div class="product-slider__card swiper-slide">
+            <h4>501® Levi's® Original Jeans</h4>
+            <p class="product-slider_description">
+              With a classic straight leg and iconic styling, they’re literally
+              the blueprint for every pair of modern jeans—burned into the
+              world’s collective cortex ever since Levi Strauss (the man
+              himself!) introduced them in 1873.
+            </p>
+            <a class="product-slider__cta" href="/index.html"
+              >Seam the details<svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M4 12H20M20 12L14 6M20 12L14 18"
+                    stroke="#c41320"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <div class="product-slider__image-container">
+              <img
+                src="assets/images/levis-1.webp"
+                alt="Levi's 501® Jeans"
+                class="product-slider__image"
+              />
+              <img
+                src="assets/images/levis-1-hover.webp"
+                alt="Levi's 501® Jeans Hover"
+                class="product-slider__image-hover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
+    <!-- Adding SwiperJS cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
