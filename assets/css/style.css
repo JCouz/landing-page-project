@@ -501,11 +501,6 @@ header.sticky.visible {
   gap: 12px;
 }
 
-.product-slider__cta-arrow {
-  width: 24px;
-  height: 24px;
-}
-
 .product-slider__image-container {
   position: relative;
   overflow: hidden;
@@ -549,6 +544,19 @@ header.sticky.visible {
     height: 100%;
   }
 
+  .product-slider__cta:hover {
+    background-color: #c41320;
+    color: #fff;
+  }
+
+  .product-slider__cta-arrow {
+    transition: stroke 0.3s ease;
+  }
+
+  .product-slider__cta-arrow:hover path {
+    stroke: #fff;
+  }
+
   .product-slider__card:hover .product-slider__image-hover {
     opacity: 1;
   }
@@ -566,5 +574,9 @@ header.sticky.visible {
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
     height: 100%;
+  }
+
+  .product-slider__image-hover {
+    display: block;
   }
 }
