@@ -549,11 +549,11 @@ header.sticky.visible {
     color: #fff;
   }
 
-  .product-slider__cta-arrow {
+  .product-slider__cta-arrow path {
     transition: stroke 0.3s ease;
   }
 
-  .product-slider__cta-arrow:hover path {
+  .product-slider__cta:hover .product-slider__cta-arrow path {
     stroke: #fff;
   }
 
