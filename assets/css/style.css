@@ -295,6 +295,7 @@ a:has(img):hover {
   padding: 10px;
   border-bottom: 2px #c41320 solid;
   height: 64px;
+  transition: padding 0.3s, border-bottom 0.3s; /* Smooth transitions for padding and border */
 }
 
 .header__logo {
@@ -309,6 +310,17 @@ a:has(img):hover {
   }
 }
 
+/* Sticky Header */
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
 /* Hero */
 
 .hero__container {
@@ -316,8 +328,13 @@ a:has(img):hover {
   padding: 32px 15px;
   flex-direction: column;
   background-image: url('/assets/images/demin-background.jpg');
+  /* Typically, I would use vh for the height,
+   but since I was trying to achieve particular spacing for the image, 
+   I have gone with a set value */
   height: 675px;
   position: relative;
+  /* sticky header offset */
+  margin-top: 64px;
 }
 
 .hero__content {
@@ -345,6 +362,12 @@ a:has(img):hover {
 
 .hero__image {
   width: 300px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero__image.visible {
+  opacity: 1;
 }
 
 .hero__image-link {
@@ -364,7 +387,7 @@ a:has(img):hover {
 
 /* Tablet view required to properly display content */
 
-@media screen and (min-width: 767px) and (max-width: 1375px) {
+@media screen and (min-width: 768px) and (max-width: 1375px) {
   .hero__container {
     display: flex;
     padding: 60px;
@@ -416,15 +439,15 @@ a:has(img):hover {
     max-width: 100%;
   }
 
-  /* add grayscale hover effect for desktop */
-
   .hero__image {
     position: absolute;
     width: 624px;
     left: 50%;
+    /* add grayscale hover effect for desktop */
     transform: translateX(-50%);
     filter: grayscale(100%);
-    transition: filter 0.5s ease;
+    /* transition for both grayscale & opacity fade in */
+    transition: filter 0.5s ease, opacity 1s ease-in-out;
     bottom: 14px;
   }
 
@@ -434,5 +457,113 @@ a:has(img):hover {
 
   .hero__cta-container {
     gap: 24px;
+  }
+
+  .hero__cta:hover {
+    cursor: url('/assets/images/jean-svg.svg') 24 0, auto;
+  }
+}
+
+/* Product slider */
+.product-slider {
+  max-width: 1440px;
+  padding: 32px 15px;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 604px;
+}
+
+.product-slider__card.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.product-slider_description {
+  margin-bottom: 8px;
+}
+
+.product-slider__cta {
+  background-color: transparent;
+  color: #000;
+  width: 100%;
+  border-style: double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.product-slider__cta-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.product-slider__image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.product-slider__image,
+.product-slider__image-hover {
+}
+
+.product-slider__image-hover {
+  opacity: 0;
+}
+
+.product-slider .swiper-scrollbar {
+  background-color: #c4132040;
+}
+
+.product-slider .swiper-scrollbar-drag {
+  background-color: #c41320;
+}
+
+/* Styles for screens wider than 990px */
+@media screen and (min-width: 990px) {
+  .swiper {
+    width: 100%;
+    height: 720px;
+  }
+
+  .product-slider__image {
+    height: 424px;
+  }
+
+  .product-slider {
+    padding: 64px 80px;
+  }
+
+  .product-slider__cta:hover {
+    cursor: url('/assets/images/jean-svg.svg') 24 0, auto;
+  }
+
+  .product-slider__image-container {
+    height: 424px;
+  }
+
+  .product-slider__card:hover .product-slider__image-hover {
+    opacity: 1;
+  }
+
+  .product-slider__card:hover .product-slider__image {
+    opacity: 0;
+  }
+
+  .product-slider__image,
+  .product-slider__image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    height: 100%;
   }
 }
