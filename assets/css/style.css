@@ -575,10 +575,6 @@ header.sticky.visible {
     padding: 64px 80px;
   }
 
-  .product-slider__cta:hover {
-    cursor: url('/assets/images/jean-svg.svg') 24 0, auto;
-  }
-
   .product-slider_description {
     min-height: 135px;
   }
