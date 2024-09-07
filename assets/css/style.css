@@ -326,7 +326,7 @@ header.sticky.visible {
   transform: translateY(0);
 }
 
-/* Hero */
+/* Hero Section */
 
 .hero__container {
   display: flex;
@@ -388,7 +388,7 @@ header.sticky.visible {
   text-align: center;
 }
 
-/* Tablet view required to properly display content */
+/* Tablet view (hero) required to properly display content */
 
 @media screen and (min-width: 768px) and (max-width: 1375px) {
   .hero__container {
@@ -424,7 +424,7 @@ header.sticky.visible {
   }
 }
 
-/* Desktop view */
+/* Desktop view hero section */
 
 @media screen and (min-width: 1375px) {
   .hero__container {
@@ -472,6 +472,7 @@ header.sticky.visible {
 }
 
 /* Product slider */
+
 .product-slider {
   max-width: 1440px;
   padding: 32px 15px;
@@ -526,7 +527,7 @@ header.sticky.visible {
   background-color: #c41320;
 }
 
-/* Desktop view */
+/* Desktop view product slider */
 
 @media screen and (min-width: 990px) {
   .product-slider .swiper {
