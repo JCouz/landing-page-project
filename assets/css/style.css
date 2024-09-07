@@ -331,13 +331,13 @@ header.sticky.visible {
 
 .hero__container {
   display: flex;
-  padding: 120px 15px;
+  padding: 80px 15px;
   flex-direction: column;
   background-image: url('/assets/images/demin-background.jpg');
   /* Typically, I would use vh for the height,
    but since I was trying to achieve particular spacing for the image, 
    I have gone with a set value */
-  height: 890px;
+  height: 775px;
   position: relative;
   margin-bottom: -54px;
 }
