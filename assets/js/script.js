@@ -60,4 +60,55 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update lastScrollTop
     lastScrollTop = Math.max(currentScroll, 0);
   });
+
+  // JS to inject USPs into html for the USP section
+
+  // USP data
+  const uspPoints = [
+    {
+      icon: '/assets/images/clock-dark.svg',
+      title: 'Timeless Icon Since 1873',
+      description:
+        'The original blue jeans that set the standard for over 150 years.',
+    },
+    {
+      icon: '/assets/images/heart.svg',
+      title: 'Classic Design, Eternal Appeal',
+      description: 'Signature straight fit with a modern cropped silhouette.',
+    },
+    {
+      icon: '/assets/images/canvas.svg',
+      title: 'Canvas for Your Style',
+      description: 'A blank canvas for customization and self-expression.',
+    },
+    {
+      icon: '/assets/images/scissors.svg',
+      title: 'Iconic Fit Details',
+      description: 'Sits at waist, 11 1/4" front rise, 16" leg opening.',
+    },
+    {
+      icon: '/assets/images/wrench.svg',
+      title: 'Quality Construction',
+      description:
+        '100% Cotton, non-stretch fabric, button fly, 5-pocket styling.',
+    },
+  ];
+
+  const uspGrid = document.getElementById('uspGrid');
+
+  uspPoints.forEach((usp) => {
+    const uspItem = document.createElement('div');
+    uspItem.className = 'usp__item';
+    uspItem.innerHTML = `
+        <div class="usp__item-header">
+        <div class="usp__icon-container">
+            <img src="${usp.icon}" alt="${usp.title}" class="usp__icon">
+            </div>
+            <h6 class="usp__item-title">${usp.title}</h6>
+        </div>
+        <p class="usp__item-description">${usp.description}</p>
+
+    `;
+    uspGrid.appendChild(uspItem);
+  });
 });

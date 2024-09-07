@@ -326,18 +326,19 @@ header.sticky.visible {
   transform: translateY(0);
 }
 
-/* Hero */
+/* Hero Section */
 
 .hero__container {
   display: flex;
-  padding: 32px 15px;
+  padding: 120px 15px;
   flex-direction: column;
   background-image: url('/assets/images/demin-background.jpg');
   /* Typically, I would use vh for the height,
    but since I was trying to achieve particular spacing for the image, 
    I have gone with a set value */
-  height: 675px;
+  height: 840px;
   position: relative;
+  margin-bottom: -54px;
 }
 
 .hero__content {
@@ -388,14 +389,14 @@ header.sticky.visible {
   text-align: center;
 }
 
-/* Tablet view required to properly display content */
+/* Tablet view (hero) required to properly display content */
 
 @media screen and (min-width: 768px) and (max-width: 1375px) {
   .hero__container {
     display: flex;
-    padding: 60px;
+    padding: 140px 60px;
     flex-direction: column;
-    height: 450px;
+    height: 650px;
     align-items: center;
   }
 
@@ -424,11 +425,14 @@ header.sticky.visible {
   }
 }
 
-/* Desktop view */
+/* Desktop view hero section */
 
 @media screen and (min-width: 1375px) {
   .hero__container {
-    padding: 80px;
+    padding: 220px 80px;
+    height: 950px;
+    /* Adding minus margin to overlap the USP section to allow them to stand out better */
+    margin-bottom: -100px;
   }
 
   .hero__content {
@@ -455,7 +459,7 @@ header.sticky.visible {
     filter: grayscale(100%);
     /* transition for both grayscale & opacity fade in */
     transition: filter 0.5s ease, opacity 1s ease-in-out;
-    bottom: 14px;
+    bottom: 150px;
   }
 
   .hero__image:hover {
@@ -471,11 +475,27 @@ header.sticky.visible {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .hero__container {
+    padding: 200px;
+  }
+}
+
 /* Product slider */
+
 .product-slider {
   max-width: 1440px;
   padding: 32px 15px;
   margin: auto;
+}
+
+.product-slider__title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.product-slider__highlight {
+  color: #c41320;
 }
 
 .product-slider .swiper {
@@ -499,7 +519,8 @@ header.sticky.visible {
   background-color: transparent;
   color: #000;
   width: 100%;
-  border-style: double;
+  border-width: 2px;
+  border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -517,6 +538,13 @@ header.sticky.visible {
   display: none;
 }
 
+.product-slider__divider {
+  border: 2px solid #c41320;
+  margin: auto;
+  margin-bottom: 32px;
+  max-width: 10%;
+}
+
 .product-slider .swiper-scrollbar {
   background-color: #c4132040;
 }
@@ -525,9 +553,13 @@ header.sticky.visible {
   background-color: #c41320;
 }
 
-/* Desktop view */
+/* Desktop view product slider */
 
 @media screen and (min-width: 990px) {
+  .product-slider__title {
+    margin-bottom: 32px;
+  }
+
   .product-slider .swiper {
     width: 100%;
     height: 720px;
@@ -588,4 +620,52 @@ header.sticky.visible {
   .product-slider__image-hover {
     display: block;
   }
+}
+
+/* USP Section */
+
+.usp {
+  padding: 15px;
+  max-width: 1400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.usp__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  justify-content: center;
+}
+.usp__item {
+  background-color: #fff;
+  text-align: center;
+  padding: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.usp__item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.usp__icon-container {
+  /* Using a less used Levi's Blue here with some opacity to make the icons pop more.
+  The blue also blends well with the jean colour behind it on the hero.
+  */
+  background-color: #0053a060;
+  padding: 8px;
+  border-radius: 24px;
+}
+
+.usp__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.usp__item-description {
+  color: #000;
+  font-size: 14px;
 }
