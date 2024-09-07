@@ -27,9 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // delay hero image on load for fade in effect
+  // Delay hero image on load for fade in effect
   const image = document.getElementById('heroImage');
-  // Delay the fade-in effect by 2 seconds
   setTimeout(() => {
     image.classList.add('visible');
   }, 2000);
