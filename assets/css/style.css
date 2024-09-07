@@ -336,7 +336,7 @@ header.sticky.visible {
   /* Typically, I would use vh for the height,
    but since I was trying to achieve particular spacing for the image, 
    I have gone with a set value */
-  height: 840px;
+  height: 890px;
   position: relative;
   margin-bottom: -54px;
 }
@@ -365,7 +365,7 @@ header.sticky.visible {
 }
 
 .hero__image {
-  width: 300px;
+  width: 340px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -635,13 +635,13 @@ header.sticky.visible {
   gap: 12px;
   justify-content: center;
 }
-.usp__item {
+.usp__card {
   background-color: #fff;
   text-align: center;
   padding: 24px 14px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.usp__item-header {
+.usp__card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -663,7 +663,7 @@ header.sticky.visible {
   height: 24px;
 }
 
-.usp__item-description {
+.usp__card-description {
   color: #000;
   font-size: 14px;
 }

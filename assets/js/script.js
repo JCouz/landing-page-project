@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // SwiperJS initialisation
   var swiper = new Swiper('.swiper', {
-    slidesPerView: 'auto',
+    slidesPerView: '1',
     spaceBetween: 10,
     grabCursor: true,
     scrollbar: {
@@ -97,18 +97,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const uspGrid = document.getElementById('uspGrid');
 
   uspPoints.forEach((usp) => {
-    const uspItem = document.createElement('div');
-    uspItem.className = 'usp__item';
-    uspItem.innerHTML = `
-        <div class="usp__item-header">
+    const uspCard = document.createElement('div');
+    uspCard.className = 'usp__card';
+    uspCard.innerHTML = `
+        <div class="usp__card-header">
         <div class="usp__icon-container">
             <img src="${usp.icon}" alt="${usp.title}" class="usp__icon">
             </div>
-            <h6 class="usp__item-title">${usp.title}</h6>
+            <h6 class="usp__card-title">${usp.title}</h6>
         </div>
-        <p class="usp__item-description">${usp.description}</p>
+        <p class="usp__card-description">${usp.description}</p>
 
     `;
-    uspGrid.appendChild(uspItem);
+    uspGrid.appendChild(uspCard);
   });
 });
