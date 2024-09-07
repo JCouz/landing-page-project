@@ -499,7 +499,8 @@ header.sticky.visible {
   background-color: transparent;
   color: #000;
   width: 100%;
-  border-style: double;
+  border-width: 2px;
+  border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
