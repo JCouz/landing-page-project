@@ -492,7 +492,7 @@ header.sticky.visible {
 
 .product-slider_description {
   margin-bottom: 8px;
-  min-height: 135px;
+  min-height: 124px;
 }
 
 .product-slider__cta {
@@ -543,6 +543,10 @@ header.sticky.visible {
 
   .product-slider__cta:hover {
     cursor: url('/assets/images/jean-svg.svg') 24 0, auto;
+  }
+
+  .product-slider_description {
+    min-height: 135px;
   }
 
   .product-slider__image-container {
