@@ -442,6 +442,10 @@ header.sticky.visible {
     max-width: 100%;
   }
 
+  .hero__right {
+    margin-right: 30px;
+  }
+
   .hero__image {
     position: absolute;
     width: 624px;
