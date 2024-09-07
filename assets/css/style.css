@@ -488,6 +488,7 @@ header.sticky.visible {
 
 .product-slider_description {
   margin-bottom: 8px;
+  min-height: 135px;
 }
 
 .product-slider__cta {
