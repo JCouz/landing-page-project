@@ -115,4 +115,28 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Script to update copyright year automatically. It's a pet peeve of mine to see out of date
    copyright years when a simple script can prevent it. */
   document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+  // Accordion for image text section
+  const accordionHeaders = document.querySelectorAll(
+    '.image-text__accordion-header'
+  );
+
+  accordionHeaders.forEach((header) => {
+    header.addEventListener('click', function () {
+      // Toggle the active class and content display
+      const content = this.nextElementSibling;
+      const isActive = this.classList.toggle('active');
+      // I like to use ternary operators when I remember they exist...
+      content.style.display = isActive ? 'block' : 'none';
+
+      // Close other open accordions
+      accordionHeaders.forEach((otherHeader) => {
+        if (otherHeader !== this) {
+          // Ensure other accordion elements are closed
+          otherHeader.classList.remove('active');
+          otherHeader.nextElementSibling.style.display = 'none';
+        }
+      });
+    });
+  });
 });
