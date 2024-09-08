@@ -1,2 +1,12 @@
 # Levi's Landing Page for Go Thrift
-Levi's Landing Page
+Technologies:
+
+Languages: 
+
+* HTML
+* CSS
+* JavaScript
+
+Libraries:
+
+* SwiperJS
