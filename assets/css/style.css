@@ -673,6 +673,7 @@ header.sticky.visible {
 
 @media screen and (min-width: 990px) {
   .usp {
+    padding: 0 40px;
     margin: 20px auto 64px;
   }
 }
@@ -717,7 +718,7 @@ video {
 .footer__content {
   display: flex;
   flex-direction: column;
-  max-width: 1260px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -770,7 +771,7 @@ video {
 }
 
 .footer__bottom {
-  max-width: 1260px;
+  max-width: 1440px;
   margin: 20px auto 0;
   padding-top: 20px;
   border-top: 1px solid #ccc;
@@ -812,6 +813,10 @@ video {
 /* Desktop view footer */
 
 @media screen and (min-width: 990px) {
+  .footer {
+    padding: 40px 80px;
+  }
+
   .footer__content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -903,7 +908,7 @@ video {
 
 @media screen and (min-width: 990px) {
   .image-text {
-    padding: 20px 80px;
+    padding: 0 80px 20px;
     background-color: #f0f0f0;
   }
 
