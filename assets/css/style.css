@@ -430,8 +430,8 @@ header.sticky.visible {
 
 @media screen and (min-width: 1375px) {
   .hero__container {
-    padding: 220px 80px;
-    height: 950px;
+    padding: 200px 80px;
+    height: 850px;
     /* Adding minus margin to overlap the USP section to allow them to stand out better */
     margin-bottom: -100px;
   }
@@ -453,14 +453,14 @@ header.sticky.visible {
 
   .hero__image {
     position: absolute;
-    width: 624px;
+    width: 600px;
     left: 50%;
     /* add grayscale hover effect for desktop */
     transform: translateX(-50%);
     filter: grayscale(100%);
     /* transition for both grayscale & opacity fade in */
     transition: filter 0.5s ease, opacity 1s ease-in-out;
-    bottom: 150px;
+    bottom: 110px;
   }
 
   .hero__image:hover {
