@@ -703,7 +703,7 @@ video {
 /* Desktop view video */
 @media screen and (min-width: 990px) {
   .video {
-    height: 100vh;
+    height: 70vh;
   }
 }
 
@@ -838,7 +838,7 @@ video {
 /* Image Text */
 
 .image-text {
-  padding: 32px 15px 0;
+  padding: 0 15px;
   background-color: #f0f0f0;
 }
 
@@ -858,7 +858,6 @@ video {
 }
 
 .image-text__text-title {
-  font-size: 2rem;
   margin-bottom: 20px;
   color: #000;
 }
@@ -873,7 +872,7 @@ video {
   background-color: #fff;
   border: none;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #000;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -900,9 +899,11 @@ video {
   line-height: 1.6;
 }
 
+/* Desktop view image text */
+
 @media screen and (min-width: 990px) {
   .image-text {
-    padding: 40px 80px 20px;
+    padding: 20px 80px;
     background-color: #f0f0f0;
   }
 
@@ -919,9 +920,5 @@ video {
 
   .image-text__image-container {
     margin-bottom: 0;
-  }
-
-  .image-text__text-title {
-    font-size: 2.5rem;
   }
 }
