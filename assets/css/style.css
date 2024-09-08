@@ -673,6 +673,7 @@ header.sticky.visible {
 
 @media screen and (min-width: 990px) {
   .usp {
+    padding: 0 40px;
     margin: 20px auto 64px;
   }
 }
@@ -703,7 +704,7 @@ video {
 /* Desktop view video */
 @media screen and (min-width: 990px) {
   .video {
-    height: 100vh;
+    height: 70vh;
   }
 }
 
@@ -717,7 +718,7 @@ video {
 .footer__content {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -770,7 +771,7 @@ video {
 }
 
 .footer__bottom {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 20px auto 0;
   padding-top: 20px;
   border-top: 1px solid #ccc;
@@ -812,6 +813,10 @@ video {
 /* Desktop view footer */
 
 @media screen and (min-width: 990px) {
+  .footer {
+    padding: 40px 80px;
+  }
+
   .footer__content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -823,9 +828,102 @@ video {
     margin-bottom: 0;
   }
 
+  .footer__social-icon {
+    width: 32px;
+    height: 32px;
+  }
+
   .footer__bottom {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/* Image Text */
+
+.image-text {
+  padding: 0 15px;
+  background-color: #f0f0f0;
+}
+
+.image-text__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.image-text__image-container {
+  margin-bottom: 20px;
+}
+
+.image-text__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-text__text-title {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.image-text__accordion-item {
+  margin-bottom: 10px;
+}
+
+.image-text__accordion-header {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-text__accordion-header:hover {
+  background-color: #e0e0e0;
+}
+
+.image-text__accordion-header.active {
+  background-color: #c41320;
+  color: #fff;
+}
+
+.image-text__accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.image-text__accordion-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Desktop view image text */
+
+@media screen and (min-width: 990px) {
+  .image-text {
+    padding: 0 80px 20px;
+    background-color: #f0f0f0;
+  }
+
+  .image-text__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .image-text__image-container,
+  .image-text__text-container {
+    width: 50%;
+  }
+
+  .image-text__image-container {
+    margin-bottom: 0;
   }
 }
