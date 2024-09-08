@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const image = document.getElementById('heroImage');
   setTimeout(() => {
     image.classList.add('visible');
-  }, 2000);
+  }, 1500);
 
   // Sticky header
   let lastScrollTop = 0;

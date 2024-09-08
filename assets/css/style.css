@@ -459,7 +459,7 @@ header.sticky.visible {
     transform: translateX(-50%);
     filter: grayscale(100%);
     /* transition for both grayscale & opacity fade in */
-    transition: filter 0.5s ease, opacity 1s ease-in-out;
+    transition: filter 0.5s ease, opacity 0.6s ease-in-out;
     bottom: 126px;
   }
 
