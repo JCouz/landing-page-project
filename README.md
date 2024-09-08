@@ -1,7 +1,7 @@
 # Levi's Landing Page for Go Thrift
 Technologies:
 
-Languages: 
+Languages - 
 
 * HTML
 * CSS
