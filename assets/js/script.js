@@ -111,4 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     uspGrid.appendChild(uspCard);
   });
+
+  /* Script to update copyright year automatically. It's a pet peeve of mine to see out of date
+   copyright years when a simple script can prevent it. */
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
