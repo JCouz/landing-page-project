@@ -382,7 +382,7 @@ header.sticky.visible {
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-bottom: -80px;
+    margin-bottom: -70px;
   }
 
   .hero__content {
@@ -424,7 +424,7 @@ header.sticky.visible {
   .hero__container {
     padding: 100px 80px 200px;
     height: calc(100vh - 82px);
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
 
   .hero__content {
