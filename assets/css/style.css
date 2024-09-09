@@ -454,6 +454,7 @@ header.sticky.visible {
     height: 450px;
     max-width: 100%;
     place-content: center;
+    justify-items: center;
   }
 
   .hero__image-link {
@@ -486,6 +487,9 @@ header.sticky.visible {
 @media screen and (min-width: 1900px) {
   .hero__container {
     padding: 200px;
+  }
+  .hero__cta-container {
+    max-width: 450px;
   }
 }
 
