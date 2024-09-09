@@ -93,9 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '100% Cotton, non-stretch fabric, button fly, 5-pocket styling.',
     },
   ];
-
+  // Target element to insert USPs into
   const uspGrid = document.getElementById('uspGrid');
-
+  // Insert USP for each object in data
   uspPoints.forEach((usp) => {
     const uspCard = document.createElement('div');
     uspCard.className = 'usp__card';
