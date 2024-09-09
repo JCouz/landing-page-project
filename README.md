@@ -1,6 +1,6 @@
 # Levi's 501 Landing Page for Go Thrift
 
-## Description
+## Description/Design Choices
 
 **I have designed and developed a product landing page including:**
 * Basic header
