@@ -486,7 +486,7 @@ header.sticky.visible {
 
 @media screen and (min-width: 1900px) {
   .hero__container {
-    padding: 200px;
+    padding: 300px;
   }
   .hero__cta-container {
     max-width: 450px;
@@ -498,7 +498,7 @@ header.sticky.visible {
 
 @media screen and (min-height: 1125px) {
   .hero__container {
-    padding: 160px 80px 200px;
+    padding: 200px 15%;
     height: calc(80vh - 82px);
   }
 }
