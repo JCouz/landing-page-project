@@ -57,7 +57,7 @@ To round off the page and include the collapsible menu element requested, I chos
 
 Again, I tried to use playful wording to maintain a general fun vibe on the page.
 
-In terms of images, I wanted something that subtly shows more variation in the product.
+In terms of imagery, I wanted something that subtly shows more variation in the product.
 
 ## How to Run the Project Locally
 
