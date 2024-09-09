@@ -53,7 +53,7 @@ A grabber icon on hover and a progress bar signify that it is a slider, in place
 
 #### Image Text + FAQs
 
-To round off the page and include the collapsible menu element requested, I chose to use some FAQ accordions with JavaScript. I would typically do an accordion with a <details>/<summary> in HTML and animate it with CSS for a lighter approach on the DOM.
+To round off the page and include the collapsible menu element requested, I chose to use some FAQ accordions with JavaScript. I would typically do an accordion with a details/summary in HTML and animate it with CSS for a lighter approach on the DOM.
 
 Again, I tried to use playful wording to maintain a general fun vibe on the page.
 
