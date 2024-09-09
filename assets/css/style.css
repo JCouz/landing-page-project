@@ -339,6 +339,7 @@ header.sticky.visible {
    I have gone with a set value */
   height: calc(100vh - 82px);
   position: relative;
+  /* Adding minus margin to overlap the USP section to allow them to stand out better */
   margin-bottom: -54px;
 }
 
@@ -398,6 +399,8 @@ header.sticky.visible {
     padding: 140px 60px;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
+    margin-bottom: -100px;
   }
 
   .hero__content {
@@ -408,6 +411,7 @@ header.sticky.visible {
     padding: 40px;
     width: 100%;
     max-width: 800px;
+    height: 500px;
   }
 
   .hero__text {
@@ -438,7 +442,6 @@ header.sticky.visible {
   .hero__container {
     padding: 160px 80px 200px;
     height: calc(100vh - 82px);
-    /* Adding minus margin to overlap the USP section to allow them to stand out better */
     margin-bottom: -100px;
   }
 
@@ -448,7 +451,7 @@ header.sticky.visible {
     grid-template-rows: 1fr;
     background-color: #f0f0f0;
     padding: 40px;
-    height: 100%;
+    height: 450px;
     max-width: 100%;
     place-content: center;
   }
@@ -459,7 +462,7 @@ header.sticky.visible {
   }
 
   .hero__image {
-    width: 300px;
+    width: 330px;
     /* add grayscale hover effect for desktop */
     filter: grayscale(100%);
     /* transition for both grayscale & opacity fade in */
@@ -483,6 +486,16 @@ header.sticky.visible {
 @media screen and (min-width: 1900px) {
   .hero__container {
     padding: 200px;
+  }
+}
+
+/* Prevent hero looking over extended on larger monitors
+ by reducing height over a certain screen height */
+
+@media screen and (min-height: 1125px) {
+  .hero__container {
+    padding: 160px 80px 200px;
+    height: calc(80vh - 82px);
   }
 }
 
@@ -568,7 +581,7 @@ header.sticky.visible {
 
   .product-slider .swiper {
     width: 100%;
-    height: 720px;
+    height: 795px;
   }
 
   .product-slider__image {
@@ -621,6 +634,12 @@ header.sticky.visible {
 
   .product-slider__image-hover {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .product-slider {
+    padding: 64px 0px;
   }
 }
 
@@ -714,13 +733,11 @@ header.sticky.visible {
 
 .video__text {
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
-  width: 44%;
-  background-color: #fff;
-  padding: 24px;
+  width: 100%;
 }
 
 .video__span {
