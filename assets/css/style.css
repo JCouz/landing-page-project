@@ -269,24 +269,6 @@ a:has(img):hover {
   font-size: inherit;
 }
 
-/* Global font classes */
-
-.body-font-regular {
-  font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
-  font-weight: normal;
-}
-
-.body-font-bold {
-  font-family: 'Helvetica Now Text', 'Helvetica', 'Arial', sans-serif;
-  font-weight: bold;
-}
-
-/* Brand colours */
-
-.brand-colour {
-  color: #c41320;
-}
-
 /* Header */
 .header__logo-container {
   display: flex;
