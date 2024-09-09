@@ -82,7 +82,7 @@ In terms of imagery, I wanted something that subtly shows more variation in the 
 * Your web browser should automatically open the landing page.
 
 5. **Viewing the page**
-* If your web browser not automatically open with the page, it should be accessible at `http://127.0.0.1:5500`.
+* If your web browser does not automatically open with the page, it should be accessible at `http://127.0.0.1:5500`.
    
 ## Technologies Used
 
