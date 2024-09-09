@@ -378,11 +378,11 @@ header.sticky.visible {
 @media screen and (min-width: 768px) and (max-width: 1375px) {
   .hero__container {
     display: flex;
-    padding: 140px 60px;
+    padding: 100px 60px;
     flex-direction: column;
     align-items: center;
     height: 80vh;
-    margin-bottom: -100px;
+    margin-bottom: -80px;
   }
 
   .hero__content {
@@ -422,9 +422,9 @@ header.sticky.visible {
 
 @media screen and (min-width: 1375px) {
   .hero__container {
-    padding: 80px 80px 200px;
+    padding: 100px 80px 200px;
     height: calc(100vh - 82px);
-    margin-bottom: -100px;
+    margin-bottom: -80px;
   }
 
   .hero__content {
@@ -433,7 +433,7 @@ header.sticky.visible {
     grid-template-rows: 1fr;
     background-color: #f0f0f0;
     padding: 40px;
-    height: 450px;
+    height: 400px;
     max-width: 100%;
     place-content: center;
     justify-items: center;
@@ -445,7 +445,7 @@ header.sticky.visible {
   }
 
   .hero__image {
-    width: 330px;
+    width: 300px;
     /* add grayscale hover effect for desktop */
     filter: grayscale(100%);
     /* transition for both grayscale & opacity fade in */
