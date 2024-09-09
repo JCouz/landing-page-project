@@ -422,7 +422,7 @@ header.sticky.visible {
 
 @media screen and (min-width: 1375px) {
   .hero__container {
-    padding: 160px 80px 200px;
+    padding: 100px 80px 200px;
     height: calc(100vh - 82px);
     margin-bottom: -100px;
   }
