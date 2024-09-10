@@ -78,7 +78,7 @@ In terms of imagery, I wanted something that subtly shows more variation in the 
 
 4. **Start Live Server:**
 * Open the `index.html` file in Visual Studio Code.
-* Right-click on the `index.html` file and select `Open with Live Server`. (You may also click `Go Live` in the bottom right hand of your screen.)
+* Right-click on the `index.html` file and select `Open with Live Server`. (You may also click `Go Live` in the bottom right hand corner of your window.)
 * Your web browser should automatically open the landing page.
 
 5. **Viewing the page**
