@@ -1,5 +1,9 @@
 # Levi's 501 Landing Page for Go Thrift
 
+## Hosted Link
+
+Please find the project hosted [here](https://landing-page-gt.vercel.app/).
+
 ## Description/Design Choices
 
 **I have designed and developed a product landing page including:**
