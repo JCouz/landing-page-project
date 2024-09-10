@@ -313,7 +313,7 @@ header.sticky.visible {
 
 .hero__container {
   display: flex;
-  padding: 80px 15px;
+  padding: 70px 15px;
   flex-direction: column;
   background-image: url('/assets/images/demin-background.jpg');
   /* Typically, I would use vh for the height,
@@ -331,7 +331,7 @@ header.sticky.visible {
   justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
-  padding: 24px;
+  padding: 22px;
   height: 100%;
 }
 
