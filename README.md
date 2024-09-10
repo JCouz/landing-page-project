@@ -95,3 +95,7 @@ In terms of imagery, I wanted something that subtly shows more variation in the 
 #### Libraries:
 
 * SwiperJS
+
+#### Hosting:
+
+* Vercel
