@@ -29,7 +29,7 @@ For the header, I wanted to just keep it simple to prevent users from immediatel
 The footer is just basic links/socials/copyright to round the page off better. I added a small script to ensure the copyright updates each year also.
 
 #### Hero Section
-The section I spent the most time on by far, tweaking a lot for screen sizes. I wanted to try and do something different, specifically an overlapping image. I tried a few different approaches and settled on a centralised PNG of the product for desktop view, then went with keeping the image within the container on mobile as it wasn't really working as well.
+The section I spent the most time on by far, tweaking a lot for screen sizes. I wanted to try and do something different, specifically an overlapping image. I tried a few different approaches and settled on a centralised PNG of the product for desktop view, forgoing the overlap on mobile/tablet as it wasn't working as well.
 
 From looking through the product on the Levi's site, I found some copy that I could use for a play on words with the image fading in. I went with that, along with a centralised PNG of the image, with more catchy copy I found on the product page for the CTA. I also added a custom cursor when hovering over the CTA in this section for a bit of fun.
 
