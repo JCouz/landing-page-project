@@ -33,7 +33,7 @@ The section I spent the most time on by far, tweaking a lot for screen sizes. I 
 
 From looking through the product on the Levi's site, I found some copy that I could use for a play on words with the image fading in. I went with that, along with a centralised PNG of the image, with more catchy copy I found on the product page for the CTA. I also added a custom cursor when hovering over the CTA in this section for a bit of fun.
 
-Overall, I focused on capturing the attention of the user on first load with what appears to be an empty space, for the product to then fade in. I also included the product to be greyscaled until you hover on it, and for the product to be a link as well as the CTA.
+Overall, I focused on capturing the attention of the user on first load with what appears to be an empty space, for the product to then fade in. I also included the product image to be greyscaled until you hover on it (desktop), and for the product to be a link as well as the CTA.
 
 #### USPs
 
