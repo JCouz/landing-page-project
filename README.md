@@ -35,6 +35,8 @@ From looking through the product on the Levi's site, I found some copy that I co
 
 Overall, I focused on capturing the attention of the user on first load with what appears to be an empty space, for the product to then fade in. I also included the product image to be greyscaled until you hover on it (desktop), and for the product to be a link as well as the CTA.
 
+Note: There may still be some bugs when viewing on mobile in the Safari browser on iOS devices, this is a TODO.
+
 #### USPs
 
 A simple section outlining some key product details contained within their own cards, including a related icon.
